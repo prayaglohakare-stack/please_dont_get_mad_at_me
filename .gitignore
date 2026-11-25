@@ -1,0 +1,6 @@
+node_modules
+dist
+.DS_Store
+*.log
+WhatsApp Image *.jpeg
+WhatsApp Video *.mp4
