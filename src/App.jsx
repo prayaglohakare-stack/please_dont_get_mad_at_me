@@ -12,13 +12,16 @@ import { SupportDepartment } from './components/SupportDepartment';
 import { MidnightCinema } from './components/MidnightCinema';
 import { EverydayAndAppreciation } from './components/EverydayAndAppreciation';
 import { BirthdayCakeSurprise } from './components/BirthdayCakeSurprise';
+import { MusicPlayer } from './components/MusicPlayer';
 import { DaisyDoodle } from './components/Doodles';
 
 export default function App() {
   const [letterOpen, setLetterOpen] = useState(false);
+  const [musicSignal, setMusicSignal] = useState(0);
 
   const handleOpenSurprise = () => {
     setLetterOpen(true);
+    setMusicSignal((prev) => prev + 1);
     const letterEl = document.getElementById('letter');
     if (letterEl) {
       letterEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -50,6 +53,7 @@ export default function App() {
           </p>
         </div>
       </footer>
+      <MusicPlayer externalPlaySignal={musicSignal} />
     </div>
   );
 }

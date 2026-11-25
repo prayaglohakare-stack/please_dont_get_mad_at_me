@@ -1911,7 +1911,7 @@ a {
 /* ---------------- Footer ---------------- */
 .site-footer {
   border-top: 1px solid var(--border-soft);
-  padding: 1.75rem 0 2.5rem;
+  padding: 1.75rem 0 5.5rem;
   background: rgba(255, 253, 250, 0.65);
 }
 
@@ -1927,6 +1927,136 @@ a {
 
 .footer-inner p {
   margin: 0;
+}
+
+/* ---------------- Floating Soundtrack Dock ---------------- */
+.music-dock {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 60;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+  gap: 0.55rem;
+  max-width: calc(100vw - 2rem);
+}
+
+.music-pill {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.45rem 0.6rem 0.45rem 0.45rem;
+  border-radius: 999px;
+  background: rgba(255, 253, 250, 0.94);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--border-soft);
+  box-shadow: 0 12px 30px rgba(52, 35, 29, 0.14);
+}
+
+.music-disc-btn {
+  width: 38px;
+  height: 38px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  border: none;
+  background: linear-gradient(135deg, var(--accent-choco), var(--accent-rose));
+  color: #fffdfa;
+  display: grid;
+  place-items: center;
+  transition: transform 0.2s ease;
+}
+
+.music-disc-btn:hover {
+  transform: scale(1.06);
+}
+
+.music-disc-btn.is-spinning svg {
+  animation: discSpin 4.5s linear infinite;
+}
+
+@keyframes discSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.music-meta-btn {
+  background: transparent;
+  border: none;
+  padding: 0;
+  text-align: left;
+  min-width: 0;
+  max-width: 190px;
+}
+
+.music-title {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--ink);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.music-sub {
+  display: block;
+  font-size: 0.71rem;
+  color: var(--ink-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.music-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.music-icon-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  background: var(--bg-cream);
+  color: var(--accent-choco);
+  display: grid;
+  place-items: center;
+  transition: background-color 0.2s ease;
+}
+
+.music-icon-btn:hover {
+  background: var(--bg-blush);
+}
+
+.music-popover {
+  width: min(300px, calc(100vw - 2rem));
+  padding: 0.9rem 1rem;
+  border-radius: 16px;
+  background: #fffdfa;
+  border: 1px solid var(--border-soft);
+  box-shadow: var(--shadow-paper);
+  font-size: 0.84rem;
+  color: var(--ink-soft);
+}
+
+.music-popover-title {
+  margin: 0 0 0.3rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 700;
+  color: var(--accent-choco);
+}
+
+.music-popover-note {
+  margin: 0;
+  line-height: 1.5;
 }
 
 /* ---------------- Responsive Breakpoints ---------------- */
@@ -2047,7 +2177,8 @@ a {
   .float-star,
   .float-daisy,
   .candle-flame,
-  .candle-glow {
+  .candle-glow,
+  .music-disc-btn.is-spinning svg {
     animation: none;
   }
 

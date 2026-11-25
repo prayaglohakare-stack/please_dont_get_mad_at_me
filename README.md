@@ -16,6 +16,7 @@ A handcrafted, interactive birthday website made specifically for **Rutika**, bu
 - **Rutika's Midnight Cinema** — Moonlit watchalong journal with tickets for *Barfi!* and *Sister Midnight*.
 - **Ordinary Moments & Appreciation** — Highlights of everyday companionship plus *"An entirely unreasonable number of reasons to appreciate you."* and a pocket-reminder cycler.
 - **Final Birthday Surprise** — Interactive chocolate-cream SVG cake with a flickering candle, confetti burst, and *"Keep dreaming ridiculously big, Rutika."*
+- **Scrapbook Soundtrack Dock** — Built-in gentle Web Audio music-box & lo-fi chord melodies (starts when opening the surprise, pauses automatically when any video plays). To use a specific song instead, simply drop any `.mp3`/`.m4a`/`.wav`/`.ogg` file into `src/assets/audio/` and rebuild.
 
 ## Project Structure
 
