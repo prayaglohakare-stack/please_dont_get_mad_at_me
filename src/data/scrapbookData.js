@@ -218,18 +218,6 @@ export const EXTRA_COMPLIMENTS = [
 
 export const PHOTOS = [
   {
-    id: 'golden-hour-flower',
-    src: './media/photos/golden-hour-flower.jpeg',
-    alt: 'Rutika at golden hour with a white plumeria flower tucked behind her ear and white headphones',
-    caption: 'Golden hour, chafa flower, zero worries.',
-    note: 'A white flower behind her ear, headphones around her neck, and an easy golden-hour smile.',
-    category: 'out-about',
-    tilt: -1.8,
-    tapeColor: 'sunshine',
-    tapePosition: 'top-center',
-    objectPosition: '50% 28%',
-  },
-  {
     id: 'saree-wink',
     src: './media/photos/saree-wink-polaroid.jpeg',
     alt: 'Polaroid print of Rutika in a blue and pink saree winking with a playful smirk',
@@ -288,18 +276,6 @@ export const PHOTOS = [
     tapeColor: 'sunshine',
     tapePosition: 'top-right',
     objectPosition: '50% 18%',
-  },
-  {
-    id: 'cotton-candy-fair',
-    src: './media/photos/cotton-candy-fair.jpeg',
-    alt: 'Rutika holding a giant bag of pink cotton candy at a bustling street fair',
-    caption: 'Fair day + giant pink cotton candy.',
-    note: 'Holding cotton candy nearly as big as her backpack in the middle of a crowded street fair.',
-    category: 'out-about',
-    tilt: -1.5,
-    tapeColor: 'blush',
-    tapePosition: 'top-center',
-    objectPosition: '50% 24%',
   },
   {
     id: 'saree-glance',
@@ -544,7 +520,7 @@ export const PHOTOS = [
 ];
 
 export const GALLERY_FILTERS = [
-  { id: 'all', label: 'All Memories (27)' },
+  { id: 'all', label: 'All Memories (25)' },
   { id: 'dressed-up', label: 'Dressed Up & Festive' },
   { id: 'chaotic', label: 'Chaotic & Funny' },
   { id: 'out-about', label: 'Out & About' },

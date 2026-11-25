@@ -10,13 +10,13 @@ A handcrafted, interactive birthday website made specifically for **Rutika**, bu
 - **Guzarwadi Hills Memory** — *"Some views stay with you."* — a sunlit keepsake spread preserving *"Her existence itself is heavenly."*
 - **The Chocolate Wafer Theory** — Interactive 3-layer wrapper & wafer unwrapping card.
 - **Unofficial Rutika Soundboard (`Rutika.exe`)** — Interactive text-based soundboard for her signature habits (random giggles, `"AYYYY!"`, `"BAAP CHUDA"`, and blowing air).
-- **The Scrapbook Gallery** — All 27 distinct photographs in tilted Polaroid frames with mood filters and a portal-mounted Lightbox.
+- **The Scrapbook Gallery** — 25 distinct photographs in tilted Polaroid frames with mood filters and a portal-mounted Lightbox.
 - **Memories in Motion** — All 3 personal video clips with native playback controls (no audio autoplay).
 - **The Unofficial Support Department** — Celebrating her calm practical advice and the exam-season study-call keepsake.
 - **Rutika's Midnight Cinema** — Moonlit watchalong journal with tickets for *Barfi!* and *Sister Midnight*.
 - **Ordinary Moments & Appreciation** — Highlights of everyday companionship plus *"An entirely unreasonable number of reasons to appreciate you."* and a pocket-reminder cycler.
 - **Final Birthday Surprise** — Interactive chocolate-cream SVG cake with a flickering candle, confetti burst, and *"Keep dreaming ridiculously big, Rutika."*
-- **Scrapbook Soundtrack Dock** — Built-in gentle Web Audio music-box & lo-fi chord melodies (starts when opening the surprise, pauses automatically when any video plays). To use a specific song instead, simply drop any `.mp3`/`.m4a`/`.wav`/`.ogg` file into `src/assets/audio/` and rebuild.
+- **Coming-of-Age Film Soundtrack Dock** — An original 8-movement Web Audio instrumental score following the story's emotional arc (*wonder → adventure → nostalgia → chaos → warmth → quiet memories → dreams → celebration*), with chapter-specific scene cues, smooth gain crossfades, volume/mute controls, video auto-pause, and optional custom licensed audio support in `src/assets/audio/`.
 
 ## Project Structure
 
@@ -24,7 +24,7 @@ A handcrafted, interactive birthday website made specifically for **Rutika**, bu
 Rutika/
 ├── public/
 │   └── media/
-│       ├── photos/          # 27 organized photographs (relative paths)
+│       ├── photos/          # 25 organized photographs (relative paths)
 │       └── videos/          # 3 organized MP4 clips (relative paths)
 ├── src/
 │   ├── components/          # Modular React sections and custom SVG illustrations
